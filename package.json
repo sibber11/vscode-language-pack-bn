@@ -3,7 +3,7 @@
 	"displayName": "Bengali Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Bengali (বাংলা)",
 	"version": "0.0.2",
-	"publisher": "your-publisher",
+	"publisher": "sibber11",
 	"license": "MIT",
 	"scripts": {
 		"package": "npx --yes @vscode/vsce package --allow-missing-repository --out vscode-language-pack-bn.vsix",
