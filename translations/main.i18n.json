@@ -39,7 +39,19 @@
 			"miFind": "&&খুঁজুন",
 			"miReplace": "&&প্রতিস্থাপন করুন",
 			"startFindAction": "খুঁজুন",
-			"startReplace": "প্রতিস্থাপন করুন"
+			"startReplace": "প্রতিস্থাপন করুন",
+			"ariaSearchNoResult": "'{1}'-এর জন্য {0} পাওয়া গেছে",
+			"findMatchAction.goToMatch": "মিলে যান...",
+			"findMatchAction.inputPlaceHolder": "একটি নির্দিষ্ট মিলে যেতে সংখ্যা লিখুন (1 থেকে {0}-এর মধ্যে)",
+			"findMatchAction.inputValidationMessage": "অনুগ্রহ করে 1 থেকে {0}-এর মধ্যে একটি সংখ্যা লিখুন",
+			"findMatchAction.noResults": "কোনো মিল নেই। অন্য কিছু খুঁজে দেখুন।",
+			"findNextMatchAction": "পরবর্তী খুঁজুন",
+			"findPreviousMatchAction": "পূর্ববর্তী খুঁজুন",
+			"nextSelectionMatchFindAction": "পরবর্তী নির্বাচন খুঁজুন",
+			"previousSelectionMatchFindAction": "পূর্ববর্তী নির্বাচন খুঁজুন",
+			"startFindWithArgsAction": "আর্গুমেন্ট দিয়ে খুঁজুন",
+			"startFindWithSelectionAction": "নির্বাচন দিয়ে খুঁজুন",
+			"too.large.for.replaceall": "নথিটি সব প্রতিস্থাপন করার জন্য অনেক বড়।"
 		},
 		"vs/editor/contrib/gotoError/browser/gotoError": {
 			"miGotoNextProblem": "&&পরবর্তী সমস্যা",
@@ -625,7 +637,15 @@
 		},
 		"vs/workbench/contrib/search/browser/search.contribution": {
 			"miViewSearch": "&&অনুসন্ধান",
-			"search": "অনুসন্ধান"
+			"search": "অনুসন্ধান",
+			"textSearchPickerHelp": "লেখা অনুসন্ধান করুন",
+			"textSearchPickerPlaceholder": "আপনার ওয়ার্কস্পেসের নথিতে লেখা অনুসন্ধান করুন।",
+			"search.showLineNumbers": "অনুসন্ধান ফলাফলে লাইন নম্বর দেখানো হবে কি না তা নিয়ন্ত্রণ করে।",
+			"search.useReplacePreview": "কোনো মিল নির্বাচন বা প্রতিস্থাপনের সময় প্রতিস্থাপন প্রিভিউ খোলা হবে কি না তা নিয়ন্ত্রণ করে।",
+			"scm.defaultViewMode.list": "অনুসন্ধান ফলাফল তালিকা হিসেবে দেখায়।",
+			"scm.defaultViewMode.tree": "অনুসন্ধান ফলাফল ট্রি হিসেবে দেখায়।",
+			"search.mode.newEditor": "নতুন সার্চ এডিটরে অনুসন্ধান করুন।",
+			"search.mode.view": "অনুসন্ধান ভিউতে, প্যানেল বা সাইড বারে অনুসন্ধান করুন।"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsBase": {
 			"search": "অনুসন্ধান"
@@ -633,7 +653,16 @@
 		"vs/workbench/contrib/search/browser/searchActionsFind": {
 			"findInFiles": "নথিতে খুঁজুন",
 			"miFindInFiles": "&&নথিতে খুঁজুন",
-			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান"
+			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান",
+			"excludeFileTypeFromSearch": "অনুসন্ধান থেকে নথির ধরন বাদ দিন",
+			"excludeFolderFromSearch": "অনুসন্ধান থেকে ফোল্ডার বাদ দিন",
+			"findInFiles.args": "অনুসন্ধানের জন্য একগুচ্ছ অপশন",
+			"findInFiles.description": "ওয়ার্কস্পেস অনুসন্ধান খুলুন",
+			"findInFolder": "ফোল্ডারে খুঁজুন...",
+			"findInWorkspace": "ওয়ার্কস্পেসে খুঁজুন...",
+			"includeFileTypeInSearch": "অনুসন্ধানে নথির ধরন অন্তর্ভুক্ত করুন",
+			"restrictResultsToFolder": "অনুসন্ধান ফোল্ডারে সীমাবদ্ধ করুন",
+			"search.expandRecursively": "পুনরাবৃত্তভাবে প্রসারিত করুন"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsSymbol": {
 			"miGotoSymbolInWorkspace": "&&ওয়ার্কস্পেসে সিম্বলে যান...",
@@ -713,6 +742,30 @@
 			"mergeAllWindowTabs": "সব উইন্ডো একত্র করুন",
 			"miExit": "&&প্রস্থান",
 			"windowConfigurationTitle": "উইন্ডো"
+		},
+		"vs/editor/contrib/find/browser/findWidget": {
+			"accessibilityHelpHintInLabel": "অ্যাক্সেসিবিলিটি সাহায্যের জন্য {0} চাপুন",
+			"ariaSearchNoResult": "'{1}'-এর জন্য {0} পাওয়া গেছে",
+			"ariaSearchNoResultEmpty": "{0} পাওয়া গেছে",
+			"ariaSearchNoResultWithLineNum": "'{1}'-এর জন্য {0} পাওয়া গেছে, {2}-এ",
+			"ariaSearchNoResultWithLineNumNoCurrentMatch": "'{1}'-এর জন্য {0} পাওয়া গেছে",
+			"findInputAriaLabelWithHint": "{0}, {1}",
+			"label.closeButton": "বন্ধ করুন",
+			"label.find": "খুঁজুন",
+			"label.findDialog": "খুঁজুন / প্রতিস্থাপন করুন",
+			"label.matchesLocation": "{1}-এর মধ্যে {0}",
+			"label.nextMatchButton": "পরবর্তী মিল",
+			"label.noResults": "কোনো ফলাফল নেই",
+			"label.previousMatchButton": "পূর্ববর্তী মিল",
+			"label.replace": "প্রতিস্থাপন করুন",
+			"label.replaceAllButton": "সব প্রতিস্থাপন করুন",
+			"label.replaceButton": "প্রতিস্থাপন করুন",
+			"label.toggleReplaceButton": "প্রতিস্থাপন টগল করুন",
+			"label.toggleSelectionFind": "নির্বাচনে খুঁজুন",
+			"placeholder.find": "খুঁজুন",
+			"placeholder.replace": "প্রতিস্থাপন করুন",
+			"replaceInputAriaLabelWithHint": "{0}, {1}",
+			"title.matchesCountLimit": "শুধু প্রথম {0}টি ফলাফল হাইলাইট করা হয়েছে, কিন্তু সব খোঁজা পুরো লেখার উপর কাজ করে।"
 		}
 	}
 }
