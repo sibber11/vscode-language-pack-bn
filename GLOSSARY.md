@@ -4,7 +4,7 @@ One Bengali term per English UI term. Check here before translating; add new ter
 
 | English | বাংলা | Note |
 |---|---|---|
-| File | ফাইল | loanword |
+| File | নথি | ফাইলের→নথির, ফাইলে→নথিতে; Profile stays প্রোফাইল |
 | View | দেখুন | |
 | Help | সাহায্য | |
 | Terminal | টার্মিনাল | loanword |

@@ -99,7 +99,7 @@
 			"mAbout": "{0} সম্পর্কে",
 			"mBringToFront": "সব সামনে আনুন",
 			"mEdit": "&&সম্পাদনা",
-			"mFile": "&&ফাইল",
+			"mFile": "&&নথি",
 			"mGoto": "&&যান",
 			"mHelp": "&&সাহায্য",
 			"mHide": "{0} লুকান",
@@ -203,14 +203,14 @@
 			"miCloseFolder": "&&ফোল্ডার বন্ধ করুন",
 			"miCloseWorkspace": "&&ওয়ার্কস্পেস বন্ধ করুন",
 			"miOpen": "&&খুলুন...",
-			"miOpenFile": "&&ফাইল খুলুন...",
+			"miOpenFile": "&&নথি খুলুন...",
 			"miOpenFolder": "&&ফোল্ডার খুলুন...",
-			"miOpenWorkspace": "&&ফাইল থেকে ওয়ার্কস্পেস খুলুন...",
+			"miOpenWorkspace": "&&নথি থেকে ওয়ার্কস্পেস খুলুন...",
 			"miSaveWorkspaceAs": "ওয়ার্কস্পেস এভাবে সংরক্ষণ করুন...",
-			"openFile": "ফাইল খুলুন...",
+			"openFile": "নথি খুলুন...",
 			"openFileFolder": "খুলুন...",
 			"openFolder": "ফোল্ডার খুলুন...",
-			"openWorkspaceAction": "ফাইল থেকে ওয়ার্কস্পেস খুলুন...",
+			"openWorkspaceAction": "নথি থেকে ওয়ার্কস্পেস খুলুন...",
 			"saveWorkspaceAsAction": "ওয়ার্কস্পেস এভাবে সংরক্ষণ করুন..."
 		},
 		"vs/workbench/browser/parts/activitybar/activitybarPart": {
@@ -335,7 +335,7 @@
 		},
 		"vs/workbench/browser/parts/titlebar/menubar.contribution": {
 			"mEdit": "&&সম্পাদনা",
-			"mFile": "&&ফাইল",
+			"mFile": "&&নথি",
 			"mGoto": "&&যান",
 			"mHelp": "&&সাহায্য",
 			"mPreferences": "&&পছন্দসমূহ",
@@ -467,8 +467,8 @@
 		},
 		"vs/workbench/contrib/files/browser/fileActions": {
 			"closeGroup": "গ্রুপ বন্ধ করুন",
-			"compareNewUntitledTextFiles": "নতুন শিরোনামহীন টেক্সট ফাইল তুলনা করুন",
-			"compareWithClipboard": "সক্রিয় ফাইল ক্লিপবোর্ডের সাথে তুলনা করুন",
+			"compareNewUntitledTextFiles": "নতুন শিরোনামহীন টেক্সট নথি তুলনা করুন",
+			"compareWithClipboard": "সক্রিয় নথি ক্লিপবোর্ডের সাথে তুলনা করুন",
 			"continueButtonLabel": "চালিয়ে যান",
 			"copyFile": "কপি করুন",
 			"delete": "মুছুন",
@@ -478,9 +478,9 @@
 			"deletePermanentlyButtonLabel": "&&স্থায়ীভাবে মুছুন",
 			"doNotAskAgain": "আমাকে আর জিজ্ঞাসা করবেন না",
 			"download": "ডাউনলোড করুন...",
-			"focusFilesExplorer": "ফাইল এক্সপ্লোরারে ফোকাস করুন",
-			"globalCompareFile": "সক্রিয় ফাইল তুলনা করুন...",
-			"newFile": "নতুন ফাইল...",
+			"focusFilesExplorer": "নথি এক্সপ্লোরারে ফোকাস করুন",
+			"globalCompareFile": "সক্রিয় নথি তুলনা করুন...",
+			"newFile": "নতুন নথি...",
 			"newFolder": "নতুন ফোল্ডার...",
 			"pasteButtonLabel": "&&পেস্ট করুন",
 			"pasteFile": "পেস্ট করুন",
@@ -489,7 +489,7 @@
 			"retry": "আবার চেষ্টা করুন",
 			"retryButtonLabel": "&&আবার চেষ্টা করুন",
 			"saveAllInGroup": "গ্রুপের সব সংরক্ষণ করুন",
-			"showInExplorer": "এক্সপ্লোরার ভিউতে সক্রিয় ফাইল দেখান",
+			"showInExplorer": "এক্সপ্লোরার ভিউতে সক্রিয় নথি দেখান",
 			"toggleAutoSave": "স্বয়ংক্রিয় সংরক্ষণ টগল করুন",
 			"upload": "আপলোড করুন..."
 		},
@@ -498,44 +498,44 @@
 			"closeAll": "সব বন্ধ করুন",
 			"closeOthers": "অন্যগুলো বন্ধ করুন",
 			"closeSaved": "সংরক্ষিত বন্ধ করুন",
-			"compareActiveWithSaved": "সক্রিয় ফাইল সংরক্ষিতের সাথে তুলনা করুন",
+			"compareActiveWithSaved": "সক্রিয় নথি সংরক্ষিতের সাথে তুলনা করুন",
 			"compareSelected": "নির্বাচিত তুলনা করুন",
 			"compareSource": "তুলনার জন্য নির্বাচন করুন",
 			"compareWithSaved": "সংরক্ষিতের সাথে তুলনা করুন",
 			"compareWithSelected": "নির্বাচিতের সাথে তুলনা করুন",
 			"copyPath": "পাথ কপি করুন",
-			"copyPathOfActive": "সক্রিয় ফাইলের পাথ কপি করুন",
+			"copyPathOfActive": "সক্রিয় নথির পাথ কপি করুন",
 			"copyRelativePath": "আপেক্ষিক পাথ কপি করুন",
-			"copyRelativePathOfActive": "সক্রিয় ফাইলের আপেক্ষিক পাথ কপি করুন",
+			"copyRelativePathOfActive": "সক্রিয় নথির আপেক্ষিক পাথ কপি করুন",
 			"cut": "কাটুন",
 			"deleteFile": "স্থায়ীভাবে মুছুন",
 			"explorerOpenWith": "এর মাধ্যমে খুলুন...",
 			"miAutoSave": "&&স্বয়ংক্রিয় সংরক্ষণ",
 			"miCloseEditor": "&&এডিটর বন্ধ করুন",
-			"miGotoFile": "&&ফাইলে যান...",
-			"miNewFile": "&&নতুন টেক্সট ফাইল",
-			"miRevert": "&&ফাইলের পরিবর্তন বাতিল করুন",
+			"miGotoFile": "&&নথিতে যান...",
+			"miNewFile": "&&নতুন টেক্সট নথি",
+			"miRevert": "&&নথির পরিবর্তন বাতিল করুন",
 			"miSave": "&&সংরক্ষণ করুন",
 			"miSaveAll": "&&সব সংরক্ষণ করুন",
 			"miSaveAs": "&&এভাবে সংরক্ষণ করুন...",
-			"newFile": "নতুন টেক্সট ফাইল",
-			"openFile": "ফাইল খুলুন...",
+			"newFile": "নতুন টেক্সট নথি",
+			"openFile": "নথি খুলুন...",
 			"openToSide": "পাশে খুলুন",
 			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান",
-			"revert": "ফাইলের পরিবর্তন বাতিল করুন",
+			"revert": "নথির পরিবর্তন বাতিল করুন",
 			"saveAll": "সব সংরক্ষণ করুন",
 			"saveAllInGroup": "গ্রুপের সব সংরক্ষণ করুন",
-			"saveFiles": "সব ফাইল সংরক্ষণ করুন"
+			"saveFiles": "সব নথি সংরক্ষণ করুন"
 		},
 		"vs/workbench/contrib/files/browser/fileCommands": {
-			"newFileCommand.saveLabel": "ফাইল তৈরি করুন",
+			"newFileCommand.saveLabel": "নথি তৈরি করুন",
 			"retry": "আবার চেষ্টা করুন",
 			"revert": "পরিবর্তন বাতিল করুন",
 			"revertAll": "সব পরিবর্তন বাতিল করুন"
 		},
 		"vs/workbench/contrib/files/browser/views/explorerView": {
 			"collapseExplorerFolders": "এক্সপ্লোরারে ফোল্ডার সংকুচিত করুন",
-			"createNewFile": "নতুন ফাইল...",
+			"createNewFile": "নতুন নথি...",
 			"createNewFolder": "নতুন ফোল্ডার...",
 			"refreshExplorer": "এক্সপ্লোরার রিফ্রেশ করুন"
 		},
@@ -631,8 +631,8 @@
 			"search": "অনুসন্ধান"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsFind": {
-			"findInFiles": "ফাইলে খুঁজুন",
-			"miFindInFiles": "&&ফাইলে খুঁজুন",
+			"findInFiles": "নথিতে খুঁজুন",
+			"miFindInFiles": "&&নথিতে খুঁজুন",
 			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsSymbol": {
@@ -656,7 +656,7 @@
 		"vs/workbench/contrib/terminal/browser/terminalMenus": {
 			"miNewInNewWindow": "&&নতুন টার্মিনাল উইন্ডো",
 			"miNewTerminal": "&&নতুন টার্মিনাল",
-			"miRunActiveFile": "&&সক্রিয় ফাইল চালান",
+			"miRunActiveFile": "&&সক্রিয় নথি চালান",
 			"miRunSelectedText": "&&নির্বাচিত লেখা চালান",
 			"miSplitTerminal": "&&টার্মিনাল ভাগ করুন",
 			"workbench.action.tasks.configureTaskRunner": "টাস্ক কনফিগার করুন...",
@@ -665,7 +665,7 @@
 			"workbench.action.terminal.copySelection.short": "কপি করুন",
 			"workbench.action.terminal.paste.short": "পেস্ট করুন",
 			"workbench.action.terminal.renameInstance": "নাম পরিবর্তন করুন...",
-			"workbench.action.terminal.runActiveFile": "সক্রিয় ফাইল চালান",
+			"workbench.action.terminal.runActiveFile": "সক্রিয় নথি চালান",
 			"workbench.action.terminal.runSelectedText": "নির্বাচিত লেখা চালান",
 			"workbench.action.terminal.selectAll": "সব নির্বাচন করুন"
 		},
@@ -694,8 +694,8 @@
 			"welcome.goBack": "পিছনে যান"
 		},
 		"vs/workbench/contrib/welcomeViews/common/newFile.contribution": {
-			"newFileTitle": "নতুন ফাইল...",
-			"welcome.newFile": "নতুন ফাইল..."
+			"newFileTitle": "নতুন নথি...",
+			"welcome.newFile": "নতুন নথি..."
 		},
 		"vs/workbench/electron-browser/actions/windowActions": {
 			"close": "উইন্ডো বন্ধ করুন",
