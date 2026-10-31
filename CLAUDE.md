@@ -44,9 +44,9 @@ Each line is one UI place. Menu items usually have `mi*` keys.
 ### 3. Check
 
 - `npm run package` must end with `DONE` (valid JSON only).
-- It does NOT catch wrong keys or `&&` / `{0}` mismatches. Validate every entry: (module, key) exists in the
-  VS Code mapping above (and ideally in the official French pack from microsoft/vscode-loc), placeholder set
-  and `&&` count identical to English.
+- `npm run check` validates every entry against the installed VS Code: (module, key) exists, placeholder set,
+  `&&` and newline count identical to English; warns on untranslated text and ফাইল (glossary says নথি).
+  Must report 0 errors. Ideally also compare keys with the official French pack from microsoft/vscode-loc.
 
 ### 4. Test
 
@@ -60,5 +60,5 @@ only after startup); the second launch is correct. F5 / Extension Development Ho
 
 ## Pending idea (not built)
 
-`scripts/` with `npm run find "<text>"` (lookup above), `npm run check` (key/placeholder/`&&` validation),
-`npm run missing` (untranslated keys per module), so nothing depends on `/tmp`.
+`npm run find "<text>"` (lookup above) and `npm run missing` (untranslated keys per module) in `scripts/`,
+next to the existing `scripts/check.py`, so nothing depends on `/tmp`.

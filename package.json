@@ -9,6 +9,7 @@
 		"package": "npx --yes @vscode/vsce package --allow-missing-repository --out vscode-language-pack-bn.vsix",
 		"try": "npm run package && code --user-data-dir /tmp/vscode-bn/data --extensions-dir /tmp/vscode-bn/ext --install-extension vscode-language-pack-bn.vsix --force && npm run open",
 		"open": "code --user-data-dir /tmp/vscode-bn/data --extensions-dir /tmp/vscode-bn/ext --locale=bn",
+		"check": "python3 -I scripts/check.py",
 		"clean": "rm -rf /tmp/vscode-bn && rm -f *.vsix"
 	},
 	"engines": {
