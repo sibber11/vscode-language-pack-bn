@@ -31,8 +31,13 @@ in `Configure Display Language`. Test with an installed `.vsix` in an isolated p
 
 ```sh
 npm run try    # package, install into /tmp/vscode-bn, open VS Code in bn
+npm run open   # open the test instance again (no install)
 npm run clean  # remove /tmp/vscode-bn and the .vsix
 ```
+
+After every `try`: quit the test window (Cmd+Q), then `npm run open`. VS Code registers a
+CLI-installed pack in `languagepacks.json` only after startup, so the first launch after an
+install shows English (or stale) menus; the second launch uses the new translations.
 
 Your normal VS Code profile is not touched. Close the test window before re-running `try`,
 otherwise the open window keeps the old translations.
