@@ -7,6 +7,10 @@ Wrong module paths or keys fail silently (string stays English), so never hand-t
 
 ### 1. Find module + key for an English string
 
+`npm run find -- "New Folder"` (add `--missing` for untranslated hits only) does the lookup below.
+`npm run missing` lists untranslated keys per module; `npm run missing -- <module-substring>` lists one module's strings.
+The raw version, if the scripts are unavailable:
+
 Source of truth: the installed VS Code's NLS files (`nls.keys.json` = `[module, [keys]]` flattened in order,
 index-aligned with the `nls.messages.json` array).
 
@@ -57,8 +61,3 @@ only after startup); the second launch is correct. F5 / Extension Development Ho
 ### 5. Commit
 
 `feat(bn): translate <area>`. Single-line conventional commit, no body, no attribution lines.
-
-## Pending idea (not built)
-
-`npm run find "<text>"` (lookup above) and `npm run missing` (untranslated keys per module) in `scripts/`,
-next to the existing `scripts/check.py`, so nothing depends on `/tmp`.

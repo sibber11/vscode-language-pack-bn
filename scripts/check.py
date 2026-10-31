@@ -9,20 +9,14 @@ Override the VS Code location with VSCODE_OUT=/path/to/app/out/.
 """
 import json, os, re, sys
 
-OUT = os.environ.get("VSCODE_OUT", "/Applications/Visual Studio Code.app/Contents/Resources/app/out/")
-FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "translations", "main.i18n.json")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from nls import english as _english, translations
 
-keys = json.load(open(os.path.join(OUT, "nls.keys.json"), encoding="utf-8"))
-msgs = json.load(open(os.path.join(OUT, "nls.messages.json"), encoding="utf-8"))
-english, i = {}, 0
-for mod, ks in keys:
-    for k in ks:
-        english[(mod, k)] = msgs[i]
-        i += 1
+english = {(m, k): t for m, k, t in _english()}
 
 placeholders = lambda s: sorted(re.findall(r"\{\d+\}", s))
 errors, warnings, count = [], [], 0
-for mod, entries in json.load(open(FILE, encoding="utf-8"))["contents"].items():
+for mod, entries in translations().items():
     for key, text in entries.items():
         count += 1
         where = f"{mod} | {key}"
