@@ -9,28 +9,710 @@
 			"dialogWarningMessage": "সতর্কতা",
 			"ok": "ঠিক আছে"
 		},
-		"vs/platform/menubar/electron-main/menubar": {
-			"mFile": "&&ফাইল",
-			"mHelp": "&&সাহায্য",
-			"mTerminal": "&&টার্মিনাল"
+		"vs/editor/browser/editorExtensions": {
+			"miRedo": "&&পুনরায় করুন",
+			"miSelectAll": "&&সব নির্বাচন করুন",
+			"miUndo": "&&পূর্বাবস্থায় ফেরান",
+			"redo": "পুনরায় করুন",
+			"selectAll": "সব নির্বাচন করুন",
+			"undo": "পূর্বাবস্থায় ফেরান"
 		},
-		"vs/workbench/browser/parts/titlebar/menubar.contribution": {
+		"vs/editor/contrib/bracketMatching/browser/bracketMatching": {
+			"miGoToBracket": "&&ব্র্যাকেটে যান",
+			"smartSelect.jumpBracket": "ব্র্যাকেটে যান"
+		},
+		"vs/editor/contrib/clipboard/browser/clipboard": {
+			"actions.clipboard.copyLabel": "কপি করুন",
+			"actions.clipboard.cutLabel": "কাটুন",
+			"actions.clipboard.pasteLabel": "পেস্ট করুন",
+			"miCopy": "&&কপি করুন",
+			"miCut": "&&কাটুন",
+			"miPaste": "&&পেস্ট করুন"
+		},
+		"vs/editor/contrib/comment/browser/comment": {
+			"comment.block": "ব্লক মন্তব্য টগল করুন",
+			"comment.line": "লাইন মন্তব্য টগল করুন",
+			"miToggleBlockComment": "&&ব্লক মন্তব্য টগল করুন",
+			"miToggleLineComment": "&&লাইন মন্তব্য টগল করুন"
+		},
+		"vs/editor/contrib/find/browser/findController": {
+			"miFind": "&&খুঁজুন",
+			"miReplace": "&&প্রতিস্থাপন করুন",
+			"startFindAction": "খুঁজুন",
+			"startReplace": "প্রতিস্থাপন করুন"
+		},
+		"vs/editor/contrib/gotoError/browser/gotoError": {
+			"miGotoNextProblem": "&&পরবর্তী সমস্যা",
+			"miGotoPreviousProblem": "&&পূর্ববর্তী সমস্যা"
+		},
+		"vs/editor/contrib/gotoSymbol/browser/goToCommands": {
+			"actions.goToDecl.label": "সংজ্ঞায় যান",
+			"actions.goToDeclaration.label": "ঘোষণায় যান",
+			"actions.goToImplementation.label": "বাস্তবায়নে যান",
+			"actions.goToTypeDefinition.label": "টাইপ সংজ্ঞায় যান",
+			"goToReferences.label": "রেফারেন্সে যান",
+			"miGotoDeclaration": "&&ঘোষণায় যান",
+			"miGotoDefinition": "&&সংজ্ঞায় যান",
+			"miGotoImplementation": "&&বাস্তবায়নে যান",
+			"miGotoReference": "&&রেফারেন্সে যান",
+			"miGotoTypeDefinition": "&&টাইপ সংজ্ঞায় যান"
+		},
+		"vs/editor/contrib/linesOperations/browser/linesOperations": {
+			"duplicateSelection": "নির্বাচন ডুপ্লিকেট করুন",
+			"lines.copyDown": "লাইন নিচে কপি করুন",
+			"lines.copyUp": "লাইন উপরে কপি করুন",
+			"lines.moveDown": "লাইন নিচে সরান",
+			"lines.moveUp": "লাইন উপরে সরান",
+			"miCopyLinesDown": "&&লাইন নিচে কপি করুন",
+			"miCopyLinesUp": "&&লাইন উপরে কপি করুন",
+			"miDuplicateSelection": "&&নির্বাচন ডুপ্লিকেট করুন",
+			"miMoveLinesDown": "&&লাইন নিচে সরান",
+			"miMoveLinesUp": "&&লাইন উপরে সরান"
+		},
+		"vs/editor/contrib/links/browser/links": {
+			"label": "লিংক খুলুন"
+		},
+		"vs/editor/contrib/multicursor/browser/multicursor": {
+			"miAddSelectionToNextFindMatch": "&&পরবর্তী মিল যোগ করুন",
+			"miAddSelectionToPreviousFindMatch": "&&পূর্ববর্তী মিল যোগ করুন",
+			"miInsertCursorAbove": "&&উপরে কার্সর যোগ করুন",
+			"miInsertCursorAtEndOfEachLineSelected": "&&লাইনের শেষে কার্সর যোগ করুন",
+			"miInsertCursorBelow": "&&নিচে কার্সর যোগ করুন",
+			"miSelectHighlights": "&&সব মিল নির্বাচন করুন",
+			"mutlicursor.insertAbove": "উপরে কার্সর যোগ করুন",
+			"mutlicursor.insertAtEndOfEachLineSelected": "লাইনের শেষে কার্সর যোগ করুন",
+			"mutlicursor.insertBelow": "নিচে কার্সর যোগ করুন"
+		},
+		"vs/editor/contrib/smartSelect/browser/smartSelect": {
+			"miSmartSelectGrow": "&&নির্বাচন বাড়ান",
+			"miSmartSelectShrink": "&&নির্বাচন কমান",
+			"smartSelect.expand": "নির্বাচন বাড়ান",
+			"smartSelect.shrink": "নির্বাচন কমান"
+		},
+		"vs/editor/contrib/stickyScroll/browser/stickyScrollActions": {
+			"miStickyScroll": "&&স্টিকি স্ক্রল",
+			"stickyScroll": "স্টিকি স্ক্রল"
+		},
+		"vs/platform/menubar/electron-main/menubar": {
+			"cancel": "বাতিল",
+			"exit": "&&প্রস্থান",
+			"mAbout": "{0} সম্পর্কে",
+			"mBringToFront": "সব সামনে আনুন",
+			"mEdit": "&&সম্পাদনা",
 			"mFile": "&&ফাইল",
+			"mGoto": "&&যান",
 			"mHelp": "&&সাহায্য",
+			"mHide": "{0} লুকান",
+			"mHideOthers": "অন্যগুলো লুকান",
+			"mMergeAllWindows": "সব উইন্ডো একত্র করুন",
+			"mMinimize": "ছোট করুন",
+			"mMoveTabToNewWindow": "ট্যাব নতুন উইন্ডোতে সরান",
+			"mNewTab": "নতুন ট্যাব",
+			"mRun": "&&চালান",
+			"mSelection": "&&নির্বাচন",
+			"mServices": "সার্ভিসসমূহ",
+			"mShowAll": "সব দেখান",
+			"mShowNextTab": "পরবর্তী ট্যাব দেখান",
+			"mShowPreviousTab": "পূর্ববর্তী ট্যাব দেখান",
 			"mTerminal": "&&টার্মিনাল",
-			"mView": "&&দেখুন"
+			"mWindow": "উইন্ডো",
+			"mZoom": "জুম",
+			"miCancellingUpdate": "আপডেট বাতিল হচ্ছে...",
+			"miCheckForUpdates": "&&আপডেট খুঁজুন...",
+			"miCheckingForUpdates": "আপডেট খোঁজা হচ্ছে...",
+			"miDownloadUpdate": "&&উপলব্ধ আপডেট ডাউনলোড করুন",
+			"miDownloadingUpdate": "আপডেট ডাউনলোড হচ্ছে...",
+			"miInstallUpdate": "&&আপডেট ইনস্টল করুন...",
+			"miInstallingUpdate": "আপডেট ইনস্টল হচ্ছে...",
+			"miNewWindow": "&&নতুন উইন্ডো",
+			"miPreferences": "&&পছন্দসমূহ",
+			"miQuit": "{0} থেকে প্রস্থান করুন",
+			"miRestartToUpdate": "&&আপডেটের জন্য রিস্টার্ট করুন",
+			"miSwitchWindow": "&&উইন্ডো পরিবর্তন করুন...",
+			"quit": "&&প্রস্থান",
+			"quitMessage": "আপনি কি নিশ্চিত যে প্রস্থান করবেন?",
+			"quitMessageMac": "আপনি কি নিশ্চিত যে প্রস্থান করবেন?"
+		},
+		"vs/workbench/browser/actions/helpActions": {
+			"keybindingsReference": "কীবোর্ড শর্টকাট রেফারেন্স",
+			"miDocumentation": "&&ডকুমেন্টেশন",
+			"miKeyboardShortcuts": "&&কীবোর্ড শর্টকাট রেফারেন্স",
+			"miLicense": "&&লাইসেন্স দেখুন",
+			"miPrivacyStatement": "&&গোপনীয়তা বিবৃতি",
+			"miTipsAndTricks": "&&টিপস ও কৌশল",
+			"miUserVoice": "&&ফিচার অনুরোধ খুঁজুন",
+			"miVideoTutorials": "&&ভিডিও টিউটোরিয়াল",
+			"miYouTube": "&&ইউটিউবে আমাদের সাথে যোগ দিন",
+			"openDocumentationUrl": "ডকুমেন্টেশন",
+			"openLicenseUrl": "লাইসেন্স দেখুন",
+			"openPrivacyStatement": "গোপনীয়তা বিবৃতি",
+			"openTipsAndTricksUrl": "টিপস ও কৌশল",
+			"openUserVoiceUrl": "ফিচার অনুরোধ খুঁজুন",
+			"openVideoTutorialsUrl": "ভিডিও টিউটোরিয়াল",
+			"openYouTubeUrl": "ইউটিউবে আমাদের সাথে যোগ দিন"
+		},
+		"vs/workbench/browser/actions/layoutActions": {
+			"centeredLayout": "কেন্দ্রীভূত লেআউট",
+			"close": "বন্ধ করুন",
+			"fullscreen": "ফুল স্ক্রিন",
+			"menuBar": "মেনু বার",
+			"miAppearance": "&&চেহারা",
+			"miMenuBar": "&&মেনু বার",
+			"miMenuBarNoMnemonic": "মেনু বার",
+			"miMoveSidebarLeft": "&&প্রাথমিক সাইড বার বামে সরান",
+			"miMoveSidebarRight": "&&প্রাথমিক সাইড বার ডানে সরান",
+			"miShowEditorArea": "&&এডিটর এলাকা দেখান",
+			"miStatusbar": "&&স্ট্যাটাস বার",
+			"miToggleCenteredLayout": "&&কেন্দ্রীভূত লেআউট",
+			"move side bar right": "প্রাথমিক সাইড বার ডানে সরান",
+			"move sidebar left": "প্রাথমিক সাইড বার বামে সরান",
+			"moveSidebarLeft": "প্রাথমিক সাইড বার বামে সরান",
+			"moveSidebarRight": "প্রাথমিক সাইড বার ডানে সরান",
+			"panel": "প্যানেল",
+			"primary sidebar": "প্রাথমিক সাইড বার",
+			"primary sidebar mnemonic": "&&প্রাথমিক সাইড বার",
+			"secondarySideBar": "দ্বিতীয় সাইড বার",
+			"sideBar": "প্রাথমিক সাইড বার",
+			"statusBar": "স্ট্যাটাস বার",
+			"toggleMenuBar": "মেনু বার টগল করুন",
+			"toggleSideBar": "প্রাথমিক সাইড বার টগল করুন",
+			"top": "উপরে"
+		},
+		"vs/workbench/browser/actions/textInputActions": {
+			"copy": "কপি করুন",
+			"cut": "কাটুন",
+			"paste": "পেস্ট করুন",
+			"redo": "পুনরায় করুন",
+			"selectAll": "সব নির্বাচন করুন",
+			"undo": "পূর্বাবস্থায় ফেরান"
+		},
+		"vs/workbench/browser/actions/windowActions": {
+			"about": "সম্পর্কে",
+			"miAbout": "&&সম্পর্কে",
+			"miNewWindow": "&&নতুন উইন্ডো",
+			"miOpenRecent": "&&সাম্প্রতিক খুলুন",
+			"miToggleFullScreen": "&&ফুল স্ক্রিন",
+			"newWindow": "নতুন উইন্ডো",
+			"openRecent": "সাম্প্রতিক খুলুন...",
+			"reloadWindow": "উইন্ডো রিলোড করুন",
+			"toggleFullScreen": "ফুল স্ক্রিন টগল করুন"
+		},
+		"vs/workbench/browser/actions/workspaceActions": {
+			"closeWorkspace": "ওয়ার্কস্পেস বন্ধ করুন",
+			"miAddFolderToWorkspace": "&&ওয়ার্কস্পেসে ফোল্ডার যোগ করুন...",
+			"miCloseFolder": "&&ফোল্ডার বন্ধ করুন",
+			"miCloseWorkspace": "&&ওয়ার্কস্পেস বন্ধ করুন",
+			"miOpen": "&&খুলুন...",
+			"miOpenFile": "&&ফাইল খুলুন...",
+			"miOpenFolder": "&&ফোল্ডার খুলুন...",
+			"miOpenWorkspace": "&&ফাইল থেকে ওয়ার্কস্পেস খুলুন...",
+			"miSaveWorkspaceAs": "ওয়ার্কস্পেস এভাবে সংরক্ষণ করুন...",
+			"openFile": "ফাইল খুলুন...",
+			"openFileFolder": "খুলুন...",
+			"openFolder": "ফোল্ডার খুলুন...",
+			"openWorkspaceAction": "ফাইল থেকে ওয়ার্কস্পেস খুলুন...",
+			"saveWorkspaceAsAction": "ওয়ার্কস্পেস এভাবে সংরক্ষণ করুন..."
+		},
+		"vs/workbench/browser/parts/activitybar/activitybarPart": {
+			"activityBarSizeDefault": "ডিফল্ট",
+			"bottom": "নিচে",
+			"default": "ডিফল্ট",
+			"hide": "লুকানো",
+			"miBottomActivityBar": "&&নিচে",
+			"miDefaultActivityBar": "&&ডিফল্ট",
+			"miHideActivityBar": "&&লুকানো",
+			"miTopActivityBar": "&&উপরে",
+			"top": "উপরে"
+		},
+		"vs/workbench/browser/parts/auxiliarybar/auxiliaryBarActions": {
+			"miCloseSecondarySideBar": "&&দ্বিতীয় সাইড বার"
+		},
+		"vs/workbench/browser/parts/dialogs/dialogHandler": {
+			"copy": "&&কপি করুন",
+			"ok": "ঠিক আছে"
+		},
+		"vs/workbench/browser/parts/editor/breadcrumbsControl": {
+			"cmd.toggle.short": "ব্রেডক্রাম্ব",
+			"cmd.toggle2": "ব্রেডক্রাম্ব",
+			"miBreadcrumbs2": "&&ব্রেডক্রাম্ব"
+		},
+		"vs/workbench/browser/parts/editor/editor.contribution": {
+			"close": "বন্ধ করুন",
+			"closeAll": "সব বন্ধ করুন",
+			"closeAllSaved": "সংরক্ষিত বন্ধ করুন",
+			"closeEditor": "এডিটর বন্ধ করুন",
+			"closeGroupAction": "গ্রুপ বন্ধ করুন",
+			"closeOthers": "অন্যগুলো বন্ধ করুন",
+			"copyEditorToNewWindow": "এডিটর নতুন উইন্ডোতে কপি করুন",
+			"hidden": "লুকানো",
+			"hideTabs": "লুকানো",
+			"joinInGroup": "গ্রুপে যুক্ত করুন",
+			"miClearRecentOpen": "&&সাম্প্রতিক তালিকা মুছুন...",
+			"miCopyEditorToNewWindow": "&&এডিটর নতুন উইন্ডোতে কপি করুন",
+			"miEditorLayout": "&&এডিটর লেআউট",
+			"miFocusAboveGroup": "&&উপরের গ্রুপ",
+			"miFocusBelowGroup": "&&নিচের গ্রুপ",
+			"miFocusFifthGroup": "&&গ্রুপ ৫",
+			"miFocusFirstGroup": "&&গ্রুপ ১",
+			"miFocusFourthGroup": "&&গ্রুপ ৪",
+			"miFocusLeftGroup": "&&বাম গ্রুপ",
+			"miFocusRightGroup": "&&ডান গ্রুপ",
+			"miFocusSecondGroup": "&&গ্রুপ ২",
+			"miFocusThirdGroup": "&&গ্রুপ ৩",
+			"miJoinEditorInGroup": "&&গ্রুপে যুক্ত করুন",
+			"miJoinEditorInGroupWithoutMnemonic": "গ্রুপে যুক্ত করুন",
+			"miLastEditLocation": "&&সর্বশেষ সম্পাদনার স্থান",
+			"miMoveEditorToNewWindow": "&&এডিটর নতুন উইন্ডোতে সরান",
+			"miNextEditor": "&&পরবর্তী এডিটর",
+			"miNextEditorInGroup": "&&গ্রুপের পরবর্তী এডিটর",
+			"miNextGroup": "&&পরবর্তী গ্রুপ",
+			"miNextRecentlyUsedEditor": "&&পরবর্তী ব্যবহৃত এডিটর",
+			"miPreviousEditor": "&&পূর্ববর্তী এডিটর",
+			"miPreviousEditorInGroup": "&&গ্রুপের পূর্ববর্তী এডিটর",
+			"miPreviousGroup": "&&পূর্ববর্তী গ্রুপ",
+			"miPreviousRecentlyUsedEditor": "&&পূর্ববর্তী ব্যবহৃত এডিটর",
+			"miReopenClosedEditor": "&&বন্ধ করা এডিটর আবার খুলুন",
+			"miSingleColumnEditorLayout": "&&একক",
+			"miSingleColumnEditorLayoutWithoutMnemonic": "একক",
+			"miSplitEditorDown": "&&নিচে ভাগ করুন",
+			"miSplitEditorDownWithoutMnemonic": "নিচে ভাগ করুন",
+			"miSplitEditorInGroup": "&&গ্রুপে ভাগ করুন",
+			"miSplitEditorInGroupWithoutMnemonic": "গ্রুপে ভাগ করুন",
+			"miSplitEditorLeft": "&&বামে ভাগ করুন",
+			"miSplitEditorLeftWithoutMnemonic": "বামে ভাগ করুন",
+			"miSplitEditorRight": "&&ডানে ভাগ করুন",
+			"miSplitEditorRightWithoutMnemonic": "ডানে ভাগ করুন",
+			"miSplitEditorUp": "&&উপরে ভাগ করুন",
+			"miSplitEditorUpWithoutMnemonic": "উপরে ভাগ করুন",
+			"miSwitchEditor": "&&এডিটর পরিবর্তন করুন",
+			"miSwitchGroup": "&&গ্রুপ পরিবর্তন করুন",
+			"miThreeColumnsEditorLayout": "&&তিন কলাম",
+			"miThreeColumnsEditorLayoutWithoutMnemonic": "তিন কলাম",
+			"miThreeRowsEditorLayout": "&&তিন সারি",
+			"miThreeRowsEditorLayoutWithoutMnemonic": "তিন সারি",
+			"miTwoByTwoGridEditorLayout": "&&গ্রিড (২x২)",
+			"miTwoByTwoGridEditorLayoutWithoutMnemonic": "গ্রিড (২x২)",
+			"miTwoColumnsEditorLayout": "&&দুই কলাম",
+			"miTwoColumnsEditorLayoutWithoutMnemonic": "দুই কলাম",
+			"miTwoRowsEditorLayout": "&&দুই সারি",
+			"miTwoRowsEditorLayoutWithoutMnemonic": "দুই সারি",
+			"moveEditorToNewWindow": "এডিটর নতুন উইন্ডোতে সরান",
+			"navigate.next.label": "পরবর্তী পরিবর্তন",
+			"navigate.prev.label": "পূর্ববর্তী পরিবর্তন",
+			"newWindow": "নতুন উইন্ডো",
+			"splitDown": "নিচে ভাগ করুন",
+			"splitInGroup": "গ্রুপে ভাগ করুন",
+			"splitLeft": "বামে ভাগ করুন",
+			"splitRight": "ডানে ভাগ করুন",
+			"splitUp": "উপরে ভাগ করুন"
+		},
+		"vs/workbench/browser/parts/editor/editorActions": {
+			"clearButtonLabel": "&&মুছুন",
+			"clearRecentFiles": "সাম্প্রতিক তালিকা মুছুন...",
+			"closeAllEditors": "সব এডিটর বন্ধ করুন",
+			"closeEditor": "এডিটর বন্ধ করুন",
+			"closeOneEditor": "বন্ধ করুন",
+			"closeOthers": "অন্যগুলো বন্ধ করুন",
+			"copyEditorToNewWindow": "এডিটর নতুন উইন্ডোতে কপি করুন",
+			"miBack": "&&পিছনে",
+			"miCopyEditorToNewWindow": "&&এডিটর নতুন উইন্ডোতে কপি করুন",
+			"miForward": "&&সামনে",
+			"miMoveEditorToNewWindow": "&&এডিটর নতুন উইন্ডোতে সরান",
+			"moveEditorToNewWindow": "এডিটর নতুন উইন্ডোতে সরান",
+			"navigateBack": "পিছনে যান",
+			"navigateForward": "সামনে যান",
+			"reopenClosedEditor": "বন্ধ করা এডিটর আবার খুলুন",
+			"splitEditor": "এডিটর ভাগ করুন"
+		},
+		"vs/workbench/browser/parts/panel/panelActions": {
+			"miTogglePanelMnemonic": "&&প্যানেল",
+			"positionPanelBottomShort": "নিচে",
+			"positionPanelTopShort": "উপরে",
+			"togglePanel": "প্যানেল টগল করুন"
 		},
 		"vs/workbench/browser/parts/statusbar/statusbarPart": {
 			"hideStatusBar": "স্ট্যাটাস বার লুকান"
 		},
+		"vs/workbench/browser/parts/titlebar/menubar.contribution": {
+			"mEdit": "&&সম্পাদনা",
+			"mFile": "&&ফাইল",
+			"mGoto": "&&যান",
+			"mHelp": "&&সাহায্য",
+			"mPreferences": "&&পছন্দসমূহ",
+			"mSelection": "&&নির্বাচন",
+			"mTerminal": "&&টার্মিনাল",
+			"mView": "&&দেখুন"
+		},
+		"vs/workbench/browser/parts/titlebar/menubarControl": {
+			"DownloadingUpdate": "আপডেট ডাউনলোড হচ্ছে...",
+			"cancellingUpdate": "আপডেট বাতিল হচ্ছে...",
+			"checkForUpdates": "&&আপডেট খুঁজুন...",
+			"checkingForUpdates": "আপডেট খোঁজা হচ্ছে...",
+			"download now": "&&আপডেট ডাউনলোড করুন",
+			"focusMenu": "অ্যাপ্লিকেশন মেনুতে ফোকাস করুন",
+			"goToSetting": "সেটিংস খুলুন",
+			"installUpdate...": "&&আপডেট ইনস্টল করুন...",
+			"installingUpdate": "আপডেট ইনস্টল হচ্ছে...",
+			"restartToUpdate": "&&আপডেটের জন্য রিস্টার্ট করুন"
+		},
+		"vs/workbench/contrib/browserView/electron-browser/features/browserTabManagementFeatures": {
+			"browser.closeAllTabs": "সব বন্ধ করুন",
+			"browser.closeTab": "বন্ধ করুন",
+			"browser.linkOpenedHint.openSettings": "সেটিংস খুলুন",
+			"browser.newTabAction": "নতুন ট্যাব"
+		},
+		"vs/workbench/contrib/codeEditor/browser/quickaccess/gotoSymbolQuickAccess": {
+			"gotoSymbol": "এডিটরে সিম্বলে যান...",
+			"miGotoSymbolInEditor": "&&এডিটরে সিম্বলে যান..."
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleColumnSelection": {
+			"miColumnSelection": "&&কলাম নির্বাচন মোড"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleMinimap": {
+			"miMinimap": "&&মিনিম্যাপ"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleOvertype": {
+			"mitoggleOvertypeInsertMode": "&&ওভারটাইপ/ইনসার্ট মোড টগল করুন",
+			"toggleOvertypeInsertMode": "ওভারটাইপ/ইনসার্ট মোড টগল করুন"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleRenderControlCharacter": {
+			"miToggleRenderControlCharacters": "&&কন্ট্রোল ক্যারেক্টার দেখান"
+		},
+		"vs/workbench/contrib/codeEditor/browser/toggleWordWrap": {
+			"miToggleWordWrap": "&&শব্দ মোড়ানো"
+		},
+		"vs/workbench/contrib/debug/browser/breakpointsView": {
+			"disableAllBreakpoints": "সব ব্রেকপয়েন্ট বন্ধ করুন",
+			"enableAllBreakpoints": "সব ব্রেকপয়েন্ট চালু করুন",
+			"miDataBreakpoint": "&&ডেটা ব্রেকপয়েন্ট...",
+			"miDisableAllBreakpoints": "&&সব ব্রেকপয়েন্ট বন্ধ করুন",
+			"miEnableAllBreakpoints": "&&সব ব্রেকপয়েন্ট চালু করুন",
+			"miFunctionBreakpoint": "&&ফাংশন ব্রেকপয়েন্ট...",
+			"miRemoveAllBreakpoints": "&&সব ব্রেকপয়েন্ট সরান",
+			"removeAllBreakpoints": "সব ব্রেকপয়েন্ট সরান"
+		},
+		"vs/workbench/contrib/debug/browser/debug.contribution": {
+			"debugPanel": "ডিবাগ কনসোল",
+			"inlineBreakpoint": "ইনলাইন ব্রেকপয়েন্ট",
+			"mRun": "&&চালান",
+			"miAddConfiguration": "&&কনফিগারেশন যোগ করুন...",
+			"miContinue": "&&চালিয়ে যান",
+			"miInlineBreakpoint": "&&ইনলাইন ব্রেকপয়েন্ট",
+			"miInstallAdditionalDebuggers": "&&অতিরিক্ত ডিবাগার ইনস্টল করুন...",
+			"miNewBreakpoint": "&&নতুন ব্রেকপয়েন্ট",
+			"miRestart Debugging": "&&ডিবাগিং রিস্টার্ট করুন",
+			"miRun": "&&ডিবাগিং ছাড়া চালান",
+			"miStartDebugging": "&&ডিবাগিং শুরু করুন",
+			"miStepInto": "&&ধাপে প্রবেশ করুন",
+			"miStepOut": "&&ধাপ থেকে বের হন",
+			"miStepOver": "&&ধাপ অতিক্রম করুন",
+			"miStopDebugging": "&&ডিবাগিং বন্ধ করুন",
+			"miToggleBreakpoint": "ব্রেকপয়েন্ট টগল করুন",
+			"miToggleDebugConsole": "&&ডিবাগ কনসোল",
+			"miViewRun": "&&চালান",
+			"run and debug": "চালান ও ডিবাগ করুন",
+			"runMenu": "চালান",
+			"startDebuggingHelp": "ডিবাগিং শুরু করুন"
+		},
+		"vs/workbench/contrib/debug/browser/debugEditorActions": {
+			"miConditionalBreakpoint": "&&শর্তযুক্ত ব্রেকপয়েন্ট...",
+			"miEditBreakpoint": "&&ব্রেকপয়েন্ট সম্পাদনা করুন",
+			"miLogPoint": "&&লগপয়েন্ট...",
+			"miToggleBreakpoint": "&&ব্রেকপয়েন্ট টগল করুন",
+			"toggleBreakpointAction": "ব্রেকপয়েন্ট টগল করুন"
+		},
+		"vs/workbench/contrib/debug/browser/debugViewlet": {
+			"debugPanel": "ডিবাগ কনসোল",
+			"miOpenConfigurations": "&&কনফিগারেশন খুলুন"
+		},
+		"vs/workbench/contrib/extensions/browser/extensions.contribution": {
+			"extensions": "এক্সটেনশন",
+			"extensionsConfigurationTitle": "এক্সটেনশন",
+			"install": "ইনস্টল করুন",
+			"install button": "ইনস্টল করুন",
+			"installButton": "&&ইনস্টল করুন",
+			"miPreferencesExtensions": "&&এক্সটেনশন",
+			"miViewExtensions": "&&এক্সটেনশন",
+			"refreshExtension": "রিফ্রেশ করুন",
+			"showExtensions": "এক্সটেনশন",
+			"workbench.extensions.action.configure": "সেটিংস",
+			"workbench.extensions.action.copyExtension": "কপি করুন",
+			"workbench.extensions.action.copyLink": "লিংক কপি করুন"
+		},
+		"vs/workbench/contrib/extensions/browser/extensionsActions": {
+			"cancel": "বাতিল",
+			"close": "বন্ধ করুন",
+			"configure in settings": "&&সেটিংস কনফিগার করুন",
+			"disableGloballyAction": "বন্ধ করুন",
+			"enableGloballyAction": "চালু করুন",
+			"install": "ইনস্টল করুন",
+			"install anyway": "তবুও ইনস্টল করুন",
+			"learn more": "আরও জানুন",
+			"manage": "পরিচালনা করুন",
+			"more information": "&&আরও তথ্য",
+			"reload window": "উইন্ডো রিলোড করুন",
+			"report issue": "সমস্যা জানান",
+			"restart product": "আপডেটের জন্য রিস্টার্ট করুন",
+			"undo": "পূর্বাবস্থায় ফেরান",
+			"uninstallAction": "আনইনস্টল করুন",
+			"update": "আপডেট করুন"
+		},
 		"vs/workbench/contrib/files/browser/explorerViewlet": {
-			"explore": "এক্সপ্লোরার"
+			"addAFolder": "একটি ফোল্ডার যোগ করুন",
+			"explore": "এক্সপ্লোরার",
+			"folders": "ফোল্ডার",
+			"miViewExplorer": "&&এক্সপ্লোরার",
+			"openFolder": "ফোল্ডার খুলুন",
+			"openRecent": "সাম্প্রতিক খুলুন"
+		},
+		"vs/workbench/contrib/files/browser/fileActions": {
+			"closeGroup": "গ্রুপ বন্ধ করুন",
+			"compareNewUntitledTextFiles": "নতুন শিরোনামহীন টেক্সট ফাইল তুলনা করুন",
+			"compareWithClipboard": "সক্রিয় ফাইল ক্লিপবোর্ডের সাথে তুলনা করুন",
+			"continueButtonLabel": "চালিয়ে যান",
+			"copyFile": "কপি করুন",
+			"delete": "মুছুন",
+			"deleteButtonLabel": "&&মুছুন",
+			"deleteButtonLabelRecycleBin": "&&রিসাইকেল বিনে সরান",
+			"deleteButtonLabelTrash": "&&ট্র্যাশে সরান",
+			"deletePermanentlyButtonLabel": "&&স্থায়ীভাবে মুছুন",
+			"doNotAskAgain": "আমাকে আর জিজ্ঞাসা করবেন না",
+			"download": "ডাউনলোড করুন...",
+			"focusFilesExplorer": "ফাইল এক্সপ্লোরারে ফোকাস করুন",
+			"globalCompareFile": "সক্রিয় ফাইল তুলনা করুন...",
+			"newFile": "নতুন ফাইল...",
+			"newFolder": "নতুন ফোল্ডার...",
+			"pasteButtonLabel": "&&পেস্ট করুন",
+			"pasteFile": "পেস্ট করুন",
+			"rename": "নাম পরিবর্তন করুন...",
+			"replaceButtonLabel": "&&প্রতিস্থাপন করুন",
+			"retry": "আবার চেষ্টা করুন",
+			"retryButtonLabel": "&&আবার চেষ্টা করুন",
+			"saveAllInGroup": "গ্রুপের সব সংরক্ষণ করুন",
+			"showInExplorer": "এক্সপ্লোরার ভিউতে সক্রিয় ফাইল দেখান",
+			"toggleAutoSave": "স্বয়ংক্রিয় সংরক্ষণ টগল করুন",
+			"upload": "আপলোড করুন..."
+		},
+		"vs/workbench/contrib/files/browser/fileActions.contribution": {
+			"close": "বন্ধ করুন",
+			"closeAll": "সব বন্ধ করুন",
+			"closeOthers": "অন্যগুলো বন্ধ করুন",
+			"closeSaved": "সংরক্ষিত বন্ধ করুন",
+			"compareActiveWithSaved": "সক্রিয় ফাইল সংরক্ষিতের সাথে তুলনা করুন",
+			"compareSelected": "নির্বাচিত তুলনা করুন",
+			"compareSource": "তুলনার জন্য নির্বাচন করুন",
+			"compareWithSaved": "সংরক্ষিতের সাথে তুলনা করুন",
+			"compareWithSelected": "নির্বাচিতের সাথে তুলনা করুন",
+			"copyPath": "পাথ কপি করুন",
+			"copyPathOfActive": "সক্রিয় ফাইলের পাথ কপি করুন",
+			"copyRelativePath": "আপেক্ষিক পাথ কপি করুন",
+			"copyRelativePathOfActive": "সক্রিয় ফাইলের আপেক্ষিক পাথ কপি করুন",
+			"cut": "কাটুন",
+			"deleteFile": "স্থায়ীভাবে মুছুন",
+			"explorerOpenWith": "এর মাধ্যমে খুলুন...",
+			"miAutoSave": "&&স্বয়ংক্রিয় সংরক্ষণ",
+			"miCloseEditor": "&&এডিটর বন্ধ করুন",
+			"miGotoFile": "&&ফাইলে যান...",
+			"miNewFile": "&&নতুন টেক্সট ফাইল",
+			"miRevert": "&&ফাইলের পরিবর্তন বাতিল করুন",
+			"miSave": "&&সংরক্ষণ করুন",
+			"miSaveAll": "&&সব সংরক্ষণ করুন",
+			"miSaveAs": "&&এভাবে সংরক্ষণ করুন...",
+			"newFile": "নতুন টেক্সট ফাইল",
+			"openFile": "ফাইল খুলুন...",
+			"openToSide": "পাশে খুলুন",
+			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান",
+			"revert": "ফাইলের পরিবর্তন বাতিল করুন",
+			"saveAll": "সব সংরক্ষণ করুন",
+			"saveAllInGroup": "গ্রুপের সব সংরক্ষণ করুন",
+			"saveFiles": "সব ফাইল সংরক্ষণ করুন"
+		},
+		"vs/workbench/contrib/files/browser/fileCommands": {
+			"newFileCommand.saveLabel": "ফাইল তৈরি করুন",
+			"retry": "আবার চেষ্টা করুন",
+			"revert": "পরিবর্তন বাতিল করুন",
+			"revertAll": "সব পরিবর্তন বাতিল করুন"
+		},
+		"vs/workbench/contrib/files/browser/views/explorerView": {
+			"collapseExplorerFolders": "এক্সপ্লোরারে ফোল্ডার সংকুচিত করুন",
+			"createNewFile": "নতুন ফাইল...",
+			"createNewFolder": "নতুন ফোল্ডার...",
+			"refreshExplorer": "এক্সপ্লোরার রিফ্রেশ করুন"
+		},
+		"vs/workbench/contrib/files/browser/views/openEditorsView": {
+			"miToggleEditorLayout": "&&লেআউট উল্টান",
+			"miToggleEditorLayoutWithoutMnemonic": "লেআউট উল্টান"
+		},
+		"vs/workbench/contrib/format/browser/formatActionsMultiple": {
+			"do.config": "&&কনফিগার করুন...",
+			"do.config.command": "কনফিগার করুন...",
+			"do.config.notification": "কনফিগার করুন..."
+		},
+		"vs/workbench/contrib/issue/common/issue.contribution": {
+			"miReportIssue": "&&সমস্যা জানান"
+		},
+		"vs/workbench/contrib/markers/browser/markers.contribution": {
+			"copyMarker": "কপি করুন",
+			"miMarker": "&&সমস্যা",
+			"problems": "সমস্যা",
+			"show errors": "ত্রুটি দেখান",
+			"status.problems": "সমস্যা"
+		},
+		"vs/workbench/contrib/notebook/browser/controller/layoutActions": {
+			"cmd.toggle2": "ব্রেডক্রাম্ব",
+			"mitoggleNotebookStickyScroll": "&&স্টিকি স্ক্রল",
+			"notebook.toggleBreadcrumb.short": "ব্রেডক্রাম্ব",
+			"notebookStickyScroll": "স্টিকি স্ক্রল",
+			"toggleStickyScroll.short": "স্টিকি স্ক্রল"
+		},
+		"vs/workbench/contrib/output/browser/output.contribution": {
+			"miToggleOutput": "&&আউটপুট",
+			"output": "আউটপুট"
 		},
 		"vs/workbench/contrib/preferences/browser/preferences.contribution": {
+			"miOpenOnlineSettings": "&&অনলাইন সার্ভিস সেটিংস",
+			"miOpenSettings": "&&সেটিংস",
+			"miOpenTelemetrySettings": "&&টেলিমেট্রি সেটিংস",
+			"miPreferences": "&&পছন্দসমূহ",
+			"preferences": "পছন্দসমূহ",
 			"settings": "সেটিংস"
+		},
+		"vs/workbench/contrib/preferences/browser/settingsLayout": {
+			"appearance": "চেহারা",
+			"breadcrumbs": "ব্রেডক্রাম্ব",
+			"extensions": "এক্সটেনশন",
+			"fileExplorer": "এক্সপ্লোরার",
+			"find": "খুঁজুন",
+			"minimap": "মিনিম্যাপ",
+			"newWindow": "নতুন উইন্ডো",
+			"output": "আউটপুট",
+			"problems": "সমস্যা",
+			"scm": "সোর্স কন্ট্রোল",
+			"search": "অনুসন্ধান",
+			"testing": "টেস্টিং",
+			"window": "উইন্ডো"
+		},
+		"vs/workbench/contrib/processExplorer/browser/processExplorer.contribution": {
+			"miOpenProcessExplorerer": "&&প্রসেস এক্সপ্লোরার খুলুন",
+			"openProcessExplorer": "প্রসেস এক্সপ্লোরার খুলুন"
+		},
+		"vs/workbench/contrib/quickaccess/browser/quickAccess.contribution": {
+			"commandPalette": "কমান্ড প্যালেট...",
+			"miCommandPalette": "&&কমান্ড প্যালেট...",
+			"miGotoLine": "&&লাইন/কলামে যান...",
+			"miOpenView": "&&ভিউ খুলুন...",
+			"miShowAllCommands": "সব কমান্ড দেখান"
+		},
+		"vs/workbench/contrib/remote/browser/remoteIndicator": {
+			"closeRemoteConnection.title": "রিমোট সংযোগ বন্ধ করুন",
+			"miCloseRemote": "&&রিমোট সংযোগ বন্ধ করুন",
+			"reloadWindow": "উইন্ডো রিলোড করুন",
+			"remote.close": "রিমোট সংযোগ বন্ধ করুন",
+			"remote.startActions.help": "আরও জানুন",
+			"remote.startActions.install": "ইনস্টল করুন",
+			"retry": "আবার চেষ্টা করুন"
+		},
+		"vs/workbench/contrib/scm/browser/quickDiffWidget": {
+			"label.close": "বন্ধ করুন",
+			"miGotoNextChange": "&&পরবর্তী পরিবর্তন",
+			"miGotoPreviousChange": "&&পূর্ববর্তী পরিবর্তন"
+		},
+		"vs/workbench/contrib/scm/browser/scm.contribution": {
+			"miViewSCM": "&&সোর্স কন্ট্রোল",
+			"scmConfigurationTitle": "সোর্স কন্ট্রোল",
+			"source control": "সোর্স কন্ট্রোল",
+			"source control view": "সোর্স কন্ট্রোল"
+		},
+		"vs/workbench/contrib/search/browser/search.contribution": {
+			"miViewSearch": "&&অনুসন্ধান",
+			"search": "অনুসন্ধান"
 		},
 		"vs/workbench/contrib/search/browser/searchActionsBase": {
 			"search": "অনুসন্ধান"
+		},
+		"vs/workbench/contrib/search/browser/searchActionsFind": {
+			"findInFiles": "ফাইলে খুঁজুন",
+			"miFindInFiles": "&&ফাইলে খুঁজুন",
+			"revealInSideBar": "এক্সপ্লোরার ভিউতে দেখান"
+		},
+		"vs/workbench/contrib/search/browser/searchActionsSymbol": {
+			"miGotoSymbolInWorkspace": "&&ওয়ার্কস্পেসে সিম্বলে যান...",
+			"showTriggerActions": "ওয়ার্কস্পেসে সিম্বলে যান..."
+		},
+		"vs/workbench/contrib/snippets/browser/commands/configureSnippets": {
+			"miOpenSnippets": "&&স্নিপেট",
+			"userSnippets": "স্নিপেট"
+		},
+		"vs/workbench/contrib/tasks/browser/task.contribution": {
+			"TerminateAction.label": "টাস্ক বন্ধ করুন",
+			"miBuildTask": "&&বিল্ড টাস্ক চালান...",
+			"miConfigureBuildTask": "&&ডিফল্ট বিল্ড টাস্ক কনফিগার করুন...",
+			"miConfigureTask": "&&টাস্ক কনফিগার করুন...",
+			"miRestartTask": "&&চলমান টাস্ক রিস্টার্ট করুন...",
+			"miRunTask": "&&টাস্ক চালান...",
+			"miRunningTask": "&&চলমান টাস্ক দেখান...",
+			"miTerminateTask": "&&টাস্ক বন্ধ করুন..."
+		},
+		"vs/workbench/contrib/terminal/browser/terminalMenus": {
+			"miNewInNewWindow": "&&নতুন টার্মিনাল উইন্ডো",
+			"miNewTerminal": "&&নতুন টার্মিনাল",
+			"miRunActiveFile": "&&সক্রিয় ফাইল চালান",
+			"miRunSelectedText": "&&নির্বাচিত লেখা চালান",
+			"miSplitTerminal": "&&টার্মিনাল ভাগ করুন",
+			"workbench.action.tasks.configureTaskRunner": "টাস্ক কনফিগার করুন...",
+			"workbench.action.tasks.runTask": "টাস্ক চালান...",
+			"workbench.action.terminal.clear": "মুছুন",
+			"workbench.action.terminal.copySelection.short": "কপি করুন",
+			"workbench.action.terminal.paste.short": "পেস্ট করুন",
+			"workbench.action.terminal.renameInstance": "নাম পরিবর্তন করুন...",
+			"workbench.action.terminal.runActiveFile": "সক্রিয় ফাইল চালান",
+			"workbench.action.terminal.runSelectedText": "নির্বাচিত লেখা চালান",
+			"workbench.action.terminal.selectAll": "সব নির্বাচন করুন"
+		},
+		"vs/workbench/contrib/terminalContrib/stickyScroll/browser/terminal.stickyScroll.contribution": {
+			"miStickyScroll": "&&স্টিকি স্ক্রল",
+			"stickyScroll": "স্টিকি স্ক্রল"
+		},
+		"vs/workbench/contrib/testing/browser/testing.contribution": {
+			"miViewTesting": "&&টেস্টিং",
+			"test": "টেস্টিং"
+		},
+		"vs/workbench/contrib/themes/browser/themes.contribution": {
+			"defaultProductIconThemeLabel": "ডিফল্ট",
+			"goToSetting": "সেটিংস খুলুন",
+			"installExtension.button.ok": "ঠিক আছে",
+			"miSelectTheme": "&&থিম",
+			"themes": "থিম"
+		},
+		"vs/workbench/contrib/userDataProfile/browser/userDataProfile": {
+			"manage profiles": "প্রোফাইল",
+			"miOpenProfiles": "&&প্রোফাইল"
+		},
+		"vs/workbench/contrib/welcomeGettingStarted/browser/gettingStarted.contribution": {
+			"miWelcome": "স্বাগতম",
+			"welcome": "স্বাগতম",
+			"welcome.goBack": "পিছনে যান"
+		},
+		"vs/workbench/contrib/welcomeViews/common/newFile.contribution": {
+			"newFileTitle": "নতুন ফাইল...",
+			"welcome.newFile": "নতুন ফাইল..."
+		},
+		"vs/workbench/electron-browser/actions/windowActions": {
+			"close": "উইন্ডো বন্ধ করুন",
+			"closeWindow": "উইন্ডো বন্ধ করুন",
+			"miCloseWindow": "&&উইন্ডো বন্ধ করুন",
+			"miZoomIn": "&&জুম ইন",
+			"miZoomOut": "&&জুম আউট",
+			"miZoomReset": "&&জুম রিসেট করুন",
+			"switchWindow": "উইন্ডো পরিবর্তন করুন...",
+			"zoomIn": "জুম ইন",
+			"zoomOut": "জুম আউট",
+			"zoomReset": "জুম রিসেট করুন"
+		},
+		"vs/workbench/electron-browser/desktop.contribution": {
+			"mergeAllWindowTabs": "সব উইন্ডো একত্র করুন",
+			"miExit": "&&প্রস্থান",
+			"windowConfigurationTitle": "উইন্ডো"
 		}
 	}
 }

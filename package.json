@@ -2,7 +2,7 @@
 	"name": "vscode-language-pack-bn",
 	"displayName": "Bengali Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Bengali (বাংলা)",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "your-publisher",
 	"license": "MIT",
 	"scripts": {
