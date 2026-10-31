@@ -1,0 +1,36 @@
+{
+	"version": "1.0.0",
+	"contents": {
+		"vs/base/browser/ui/dialog/dialog": {
+			"dialogClose": "ডায়ালগ বন্ধ করুন",
+			"dialogErrorMessage": "ত্রুটি",
+			"dialogInfoMessage": "তথ্য",
+			"dialogPendingMessage": "চলমান",
+			"dialogWarningMessage": "সতর্কতা",
+			"ok": "ঠিক আছে"
+		},
+		"vs/platform/menubar/electron-main/menubar": {
+			"mFile": "&&ফাইল",
+			"mHelp": "&&সাহায্য",
+			"mTerminal": "&&টার্মিনাল"
+		},
+		"vs/workbench/browser/parts/titlebar/menubar.contribution": {
+			"mFile": "&&ফাইল",
+			"mHelp": "&&সাহায্য",
+			"mTerminal": "&&টার্মিনাল",
+			"mView": "&&দেখুন"
+		},
+		"vs/workbench/browser/parts/statusbar/statusbarPart": {
+			"hideStatusBar": "স্ট্যাটাস বার লুকান"
+		},
+		"vs/workbench/contrib/files/browser/explorerViewlet": {
+			"explore": "এক্সপ্লোরার"
+		},
+		"vs/workbench/contrib/preferences/browser/preferences.contribution": {
+			"settings": "সেটিংস"
+		},
+		"vs/workbench/contrib/search/browser/searchActionsBase": {
+			"search": "অনুসন্ধান"
+		}
+	}
+}

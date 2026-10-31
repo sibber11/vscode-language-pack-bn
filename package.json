@@ -1,0 +1,39 @@
+{
+	"name": "vscode-language-pack-bn",
+	"displayName": "Bengali Language Pack for Visual Studio Code",
+	"description": "Language pack extension for Bengali (বাংলা)",
+	"version": "0.0.1",
+	"publisher": "your-publisher",
+	"license": "MIT",
+	"scripts": {
+		"package": "npx --yes @vscode/vsce package --allow-missing-repository --out vscode-language-pack-bn.vsix",
+		"try": "npm run package && code --user-data-dir /tmp/vscode-bn/data --extensions-dir /tmp/vscode-bn/ext --install-extension vscode-language-pack-bn.vsix --force && code --user-data-dir /tmp/vscode-bn/data --extensions-dir /tmp/vscode-bn/ext --locale=bn",
+		"clean": "rm -rf /tmp/vscode-bn && rm -f *.vsix"
+	},
+	"engines": {
+		"vscode": "^1.144.0"
+	},
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"বাংলা",
+		"bangla",
+		"bengali"
+	],
+	"contributes": {
+		"localizations": [
+			{
+				"languageId": "bn",
+				"languageName": "Bengali",
+				"localizedLanguageName": "বাংলা",
+				"translations": [
+					{
+						"id": "vscode",
+						"path": "./translations/main.i18n.json"
+					}
+				]
+			}
+		]
+	}
+}
