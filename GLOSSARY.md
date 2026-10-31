@@ -1,6 +1,6 @@
 # Glossary
 
-One Bengali term per English UI term. Check here before translating; add new terms here first.
+One Bengali term per English UI term. Check here before translating; add new terms here first. 
 
 | English | বাংলা | Note |
 |---|---|---|
